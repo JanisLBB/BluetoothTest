@@ -1,5 +1,13 @@
+head{
+
+margin-left: 45%;
+	
+}
+
 body{
 	background-color: green;
+	margin-left: 10%;
+	margin-right: 10%;
 }	
 img{
 	width: 100%;	
@@ -19,22 +27,38 @@ img{
 	
 }	
 #messageInput{
-	
+	margin-left: 37%;
 }
 #list{
 	background-color: red;
 }
-
-/* width will be 100% of content */
 #refreshButton{
-	width: 100%;
+	width: 50%;
+	margin-left: 25%;
 }
 #sendButton{
-	width: 100%;
+	width: 50%;
+	margin-left: 25%;
 }
 #ledOnButton{
-	width: 100%;
+	width: 50%;
+	margin-left: 25%;
 }
 #ledOffButton{
-	width: 100%;
+	width: 50%;
+	margin-left: 25%;
 }
+#baby{
+	width: 50%;
+	margin-left: 25%;
+}
+#exercise{
+	width: 50%;
+	margin-left: 25%;
+}
+#disconnectButton{
+	width: 50%;
+	margin-left: 25%;
+}
+
+	
