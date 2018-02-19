@@ -34,31 +34,47 @@ img{
 }
 #refreshButton{
 	width: 50%;
+	height: 50px;
 	margin-left: 25%;
 }
 #sendButton{
 	width: 50%;
+	height: 50px;
 	margin-left: 25%;
 }
 #ledOnButton{
 	width: 50%;
+	height: 50px;
 	margin-left: 25%;
 }
 #ledOffButton{
 	width: 50%;
+	height: 50px;
 	margin-left: 25%;
 }
 #baby{
 	width: 50%;
+	height: 50px;
 	margin-left: 25%;
 }
 #exercise{
 	width: 50%;
+	height: 50px;
 	margin-left: 25%;
 }
 #disconnectButton{
 	width: 50%;
+	height: 50px;
 	margin-left: 25%;
+}
+#humid{
+	margin-left: 25%;
+}
+#temp{
+	margin-left: 5%;
+}
+#light{
+	margin-left: 10%;
 }
 
 	
