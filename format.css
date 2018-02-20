@@ -5,7 +5,7 @@ margin-left: 45%;
 }
 
 body{
-	background-color: green;
+	background-color: #ffcc99;
 	margin-left: 10%;
 	margin-right: 10%;
 }	
@@ -70,11 +70,35 @@ img{
 #humid{
 	margin-left: 25%;
 }
+#humidityInput{
+	width: 5%;
+	margin-left: 27%;
+}
 #temp{
-	margin-left: 5%;
+	margin-left: 20%;
+}
+#tempInput{
+		width: 5%;
+	margin-left: 20%;
 }
 #light{
-	margin-left: 10%;
+	margin-left: 48%;
 }
+.lighSlider{
+	width: 50%;
+}
+.slider{
+	background: gray;
+	width: 50%;
+	margin-left: 25%;
+	margin-top: 20px;
+}
+#setHumid{
+	margin-left: 25%;
+}
+#setTemp{
+	margin-left: 2%;
+}
+
 
 	

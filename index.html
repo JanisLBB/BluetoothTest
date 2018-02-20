@@ -14,9 +14,7 @@
      <body onload="onLoad()">
 
 		<h1>Room optimizer</h1><br>
-		<br>
 		<h2>select activity</h2><br>
-           
 		<ul id="bleDeviceList"> </ul>  
 		<button id="refreshButton" onClick = "refreshDeviceList()">Refresh</button>
 		<br>
@@ -32,9 +30,20 @@
 		<br><br>
 		<button id="exercise" onclick = "data('3')">Exercise</button>
 		<br><br>
+		<span id="light"> Light </span><br>
+		<div class="lightSlider">
+			<input type="range" min="1" max="100" step="1" class="slider" id="lightVal">
+		</div>
+		<br>
 		<span id="humid"> Humidity</span>
 		<span id="temp"> Temperature </span>
-		<span id="light"> Light </span><br>
+		<br>
+	
+		<input type="text" id="humidityInput" value=""/>
+		<input type="text" id="tempInput" value=""/><br>
+		<button id="setHumid" onclick="data(humidityInput)">Send Humidity Data</button>
+		<button id="setTemp" onclick="data(tempInput)">Send Temperature Data</button>
+		<br>
 		<input type="text" id="messageInput" value="Hello"/>
 		<br>
 		<button id="sendButton" onclick = "sendData()">Send</button>

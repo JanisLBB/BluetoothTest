@@ -113,5 +113,7 @@ function onDisconnect(){
 function onError(reason)  {
 	alert("ERROR: " + reason); // real apps should use notification.alert
 }
-
+funcition readSlider(){
+	var sliderVal = document.getElementById("lightVal");
+}
 	
