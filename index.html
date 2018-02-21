@@ -36,24 +36,25 @@
 		<br><br>
 		<span id="light"> Light </span><br>
 		<div class="lightSlider">
-			<input type="range" min="1" max="100" step="1" class="slider" id="lightVal">
+			<input type="range" min="1" max="100" value="50" step="1" class="slider" id="lightVal" >
 		</div>
+		<button id="setLight" onclick="sendLight(lightVal.value)">Set Light</button> 
 		<br>
 		<span id="humid"> Humidity</span>
 		<span id="temp"> Temperature </span>
 		<br>
-	
+		
 		<input type="text" id="humidityInput" value=""/>
 		<input type="text" id="tempInput" value=""/><br>
-		<button id="setHumid" onclick="sendHumid(humidityInput.value)">Send Humidity Data</button>
-		<button id="setTemp" onclick="data(tempInput)">Send Temperature Data</button>
+		<button id="setHumid" onclick="sendHumid(humidityInput.value)">Set Humidity</button>
+		<button id="setTemp" onclick="sendTemp(tempInput.value)">Set Temperature</button>
 		<br>
-		<input type="text" id="messageInput" value="Hello"/>
+		<!--<input type="text" id="messageInput" value="Hello"/>
 		<br>
 		<button id="sendButton" onclick = "sendData()">Send</button>
-		<br>
+		<br>-->
 		
-		<br>
+		
 		<div id="sendDiv"></div>
 		<br><br>
 		<button id="disconnectButton"onClick="disconnect()">Disconnect</button>

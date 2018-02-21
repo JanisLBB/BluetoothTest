@@ -109,6 +109,18 @@ function sendHumid(txt){
 var data = stringToBytes('sh ' + txt);
 ble.writeWithoutResponse(ConnDeviceId, blue.serviceUUID, blue.txCharacteristic, data, onSend, onError);
 }
+function sendTemp(txt){
+var data = stringToBytes('st ' + txt);
+ble.writeWithoutResponse(ConnDeviceId, blue.serviceUUID, blue.txCharacteristic, data, onSend, onError);
+}
+
+
+function sendLight(txt){
+	var data = stringToBytes('sl ' + txt);
+ble.writeWithoutResponse(ConnDeviceId, blue.serviceUUID, blue.txCharacteristic, data, onSend, onError);	
+	
+}
+
 function sendData() { // send data to Arduino
 	 var data = stringToBytes(messageInput.value);
 	ble.writeWithoutResponse(ConnDeviceId, blue.serviceUUID, blue.txCharacteristic, data, onSend, onError);
@@ -128,7 +140,7 @@ function onDisconnect(){
 function onError(reason)  {
 	alert("ERROR: " + reason); // real apps should use notification.alert
 }
-//funcition readSlider(){
-	//var sliderVal = document.getElementById("lightVal");
-//}
+function readSlider(){
+
+}
 	
