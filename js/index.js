@@ -88,7 +88,7 @@ function onConnError(){
 
  function onData(data){ // data received from Arduino
     var incStr = bytesToString(data);
-	var ch[] = incStr.split('');
+	var ch = incStr.split('');
 	if(ch[0] == 's' || ch[0] == 'S'){
 		if(ch[1] == 't' || ch[1] == 'T'){
 			var tRead = incStr.substring(3);
@@ -97,7 +97,7 @@ function onConnError(){
 		}else if(ch[1] == 'h' || ch[1] == 'H'){
 			var hRead = incStr.substring(3);
 			document.getElementById("readHumid").innerHTML = parseInt(hRead);
-		}		
+		}
 	}
 	document.getElementById("receiveDiv").innerHTML =  "Received: " + bytesToString(data) + "<br/>";
 }
@@ -125,7 +125,7 @@ function onDisconnect(){
 function onError(reason)  {
 	alert("ERROR: " + reason); // real apps should use notification.alert
 }
-funcition readSlider(){
-	var sliderVal = document.getElementById("lightVal");
-}
+//funcition readSlider(){
+	//var sliderVal = document.getElementById("lightVal");
+//}
 	
