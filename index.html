@@ -12,9 +12,13 @@
         <title>Beacon</title>
     </head>
      <body onload="onLoad()">
-
-		<h1>Room optimizer</h1><br>
-		<h2>select activity</h2><br>
+		<span id="titleTemp">Temperature</span>
+		<span id="titleHumid">Humidity</span>
+		<br>
+		<span id="readTemp">0</span>
+		<span id="readHumid">0</span><span>%</span>
+		<br>
+		<div>select activity</div>
 		<ul id="bleDeviceList"> </ul>  
 		<button id="refreshButton" onClick = "refreshDeviceList()">Refresh</button>
 		<br>

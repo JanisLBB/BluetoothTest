@@ -87,6 +87,18 @@ function onConnError(){
 }
 
  function onData(data){ // data received from Arduino
+    var incStr = bytesToString(data);
+	var ch[] = incStr.split('');
+	if(ch[0] == 's' || ch[0] == 'S'){
+		if(ch[1] == 't' || ch[1] == 'T'){
+			var tRead = incStr.substring(3);
+			document.getElementById("readTemp").innerHTML = parseInt(tRead);
+			//function that reads and displays current temp
+		}else if(ch[1] == 'h' || ch[1] == 'H'){
+			var hRead = incStr.substring(3);
+			document.getElementById("readHumid").innerHTML = parseInt(hRead);
+		}		
+	}
 	document.getElementById("receiveDiv").innerHTML =  "Received: " + bytesToString(data) + "<br/>";
 }
 

@@ -6,7 +6,7 @@ margin-left: 45%;
 
 body{
 	background-color: #ffcc99;
-	margin-left: 10%;
+	margin-left: 25%;
 	margin-right: 10%;
 }	
 img{
@@ -27,7 +27,7 @@ img{
 	
 }	
 #messageInput{
-	margin-left: 37%;
+	margin-left: 10%;
 }
 #list{
 	background-color: red;
@@ -35,44 +35,42 @@ img{
 #refreshButton{
 	width: 50%;
 	height: 50px;
-	margin-left: 25%;
+	
 }
 #sendButton{
 	width: 50%;
 	height: 50px;
-	margin-left: 25%;
+	
 }
 #ledOnButton{
 	width: 50%;
 	height: 50px;
-	margin-left: 25%;
+	
 }
 #ledOffButton{
 	width: 50%;
 	height: 50px;
-	margin-left: 25%;
+
 }
 #baby{
 	width: 50%;
 	height: 50px;
-	margin-left: 25%;
+
 }
 #exercise{
 	width: 50%;
 	height: 50px;
-	margin-left: 25%;
+	
 }
 #disconnectButton{
 	width: 50%;
 	height: 50px;
-	margin-left: 25%;
+	
 }
-#humid{
-	margin-left: 25%;
-}
+
 #humidityInput{
 	width: 5%;
-	margin-left: 27%;
+	margin-left: 2%;
 }
 #temp{
 	margin-left: 20%;
@@ -82,7 +80,7 @@ img{
 	margin-left: 20%;
 }
 #light{
-	margin-left: 48%;
+	margin-left: 25%;
 }
 .lighSlider{
 	width: 50%;
@@ -90,11 +88,7 @@ img{
 .slider{
 	background: gray;
 	width: 50%;
-	margin-left: 25%;
 	margin-top: 20px;
-}
-#setHumid{
-	margin-left: 25%;
 }
 #setTemp{
 	margin-left: 2%;
