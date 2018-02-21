@@ -105,7 +105,10 @@ function onConnError(){
 function data(txt){
 	messageInput.value = txt;
 }	
-
+function sendHumid(txt){
+var data = stringToBytes('sh ' + txt);
+ble.writeWithoutResponse(ConnDeviceId, blue.serviceUUID, blue.txCharacteristic, data, onSend, onError);
+}
 function sendData() { // send data to Arduino
 	 var data = stringToBytes(messageInput.value);
 	ble.writeWithoutResponse(ConnDeviceId, blue.serviceUUID, blue.txCharacteristic, data, onSend, onError);
