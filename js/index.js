@@ -96,15 +96,17 @@ function onConnError(){
 			//function that reads and displays current temp
 		}else if(ch[1] == 'h' || ch[1] == 'H'){			
 			document.getElementById("readHumid").innerHTML = parseInt(nr);
+			
 		}
 	}else if(ch[0] == 'o'){
 		if(ch[1] == 't'){
 			document.getElementById("optimalTemp").innerHTML = parseInt(nr);
+			
 		}else if (ch[1] == 'h'){
 			document.getElementById("optimalHumid").innerHTML = parseInt(nr);
 		}
 	}
-	//document.getElementById("receiveDiv").innerHTML =  "Received: " + bytesToString(data) + "<br/>";
+	document.getElementById("receiveDiv").innerHTML =  "Received: " + bytesToString(data) + "<br/>";
 }
 function data(txt){
 	messageInput.value = txt;
