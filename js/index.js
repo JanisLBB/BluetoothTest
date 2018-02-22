@@ -114,6 +114,11 @@ var data = stringToBytes('st ' + txt);
 ble.writeWithoutResponse(ConnDeviceId, blue.serviceUUID, blue.txCharacteristic, data, onSend, onError);
 }
 
+function getStats(){
+var data = stringToBytes('gr');
+ble.writeWithoutResponse(ConnDeviceId, blue.serviceUUID, blue.txCharacteristic, data, onSend, onError);	
+
+}
 
 function sendLight(txt){
 	var data = stringToBytes('sl ' + txt);
