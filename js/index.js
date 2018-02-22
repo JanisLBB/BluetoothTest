@@ -108,8 +108,8 @@ function onConnError(){
 	}
 	document.getElementById("receiveDiv").innerHTML =  "Received: " + bytesToString(data) + "<br/>";
 }
-function data(txt){
-	var data = stringToBytes(txt);
+function actWork(txt){
+	var data = stringToBytes('g' + txt);
 	ble.writeWithoutResponse(ConnDeviceId, blue.serviceUUID, blue.txCharacteristic, data, onSend, onError);
 }	
 function sendHumid(txt){
