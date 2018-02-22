@@ -12,13 +12,7 @@
         <title>Beacon</title>
     </head>
      <body onload="onLoad()">
-		<span id="titleTemp">Temperature</span>
-		<span id="titleHumid">Humidity</span>
-		<br>
-		<span id="readTemp">0</span>
-		<span id="readHumid">0</span><span>%</span>
-		<br>
-		<button id="getReadings" onclick = "getStats()">Get Sensor readings</button>
+		
 		<div>select activity</div>
 		<ul id="bleDeviceList"> </ul>  
 		<button id="refreshButton" onClick = "refreshDeviceList()">Refresh</button>
@@ -26,7 +20,18 @@
 		<div id="statusDiv">Status: Disconnected</div>
 		<div id="bleId">DeviceId:</div>
 		<div id="debugDiv"></div>
-		<br><br>
+		<br>
+		<div>Current Parameters</div>
+		<span id="titleTemp">Temperature</span>
+		<span id="titleHumid">Humidity</span>
+		<br>
+		<span id="readTemp">0</span>
+		<span id="readHumid">0</span><span>%</span>
+		<button id="getReadings" onclick = "getStats()">Get Sensor readings</button><br>
+		<div>Optimal Parameters</div>
+		<span id="optimalTemp">0</span>
+		<span id="optimalHumid">0</span><span>%</span>
+		<br>
 		<button id="ledOnButton" onclick = "data('aw')">Working</button>
 		<br><br>
 		<button id="ledOffButton" onclick = "data('as')">Sleeping</button>

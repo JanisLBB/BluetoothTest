@@ -34,37 +34,37 @@ img{
 }
 #refreshButton{
 	width: 50%;
-	height: 50px;
+	height: 30px;
 	
 }
 #sendButton{
 	width: 50%;
-	height: 50px;
+	height: 30px;
 	
 }
 #ledOnButton{
 	width: 50%;
-	height: 50px;
+	height: 30px;
 	
 }
 #ledOffButton{
 	width: 50%;
-	height: 50px;
+	height: 30px;
 
 }
 #baby{
 	width: 50%;
-	height: 50px;
+	height: 30px;
 
 }
 #exercise{
 	width: 50%;
-	height: 50px;
+	height: 30px;
 	
 }
 #disconnectButton{
 	width: 50%;
-	height: 50px;
+	height: 30px;
 	
 }
 
@@ -93,6 +93,14 @@ img{
 #setTemp{
 	margin-left: 12%;
 }
-
-
+#readTemp{
+	margin-left: 5%;
+	margin-right: 15%;
+}
+#titleTemp{
+	margin-right: 10%;
+}
+#getReadings{
+	margin-left: 20px;
+}
 	

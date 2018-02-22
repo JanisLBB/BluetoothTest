@@ -89,19 +89,23 @@ function onConnError(){
  function onData(data){ // data received from Arduino
     var incStr = bytesToString(data);
 	var ch = incStr.split('');
+	var nr = incStr.substring(3);
 	if(ch[0] == 's' || ch[0] == 'S'){
 		if(ch[1] == 't' || ch[1] == 'T'){
-			var tRead = incStr.substring(3);
-			document.getElementById("readTemp").innerHTML = parseInt(tRead);
+			document.getElementById("readTemp").innerHTML = parseInt(nr);
 			//function that reads and displays current temp
-		}else if(ch[1] == 'h' || ch[1] == 'H'){
-			var hRead = incStr.substring(3);
-			document.getElementById("readHumid").innerHTML = parseInt(hRead);
+		}else if(ch[1] == 'h' || ch[1] == 'H'){			
+			document.getElementById("readHumid").innerHTML = parseInt(nr);
+		}
+	}else if(ch[0] == 'o'){
+		if(ch[1] == 't'){
+			document.getElementById("optimalTemp").innerHTML = parseInt(nr);
+		}else if (ch[1] == 'h'){
+			document.getElementById("optimalHumid").innerHTML = parseInt(nr);
 		}
 	}
-	document.getElementById("receiveDiv").innerHTML =  "Received: " + bytesToString(data) + "<br/>";
+	//document.getElementById("receiveDiv").innerHTML =  "Received: " + bytesToString(data) + "<br/>";
 }
-
 function data(txt){
 	messageInput.value = txt;
 }	
