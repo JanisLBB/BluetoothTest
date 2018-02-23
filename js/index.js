@@ -108,7 +108,7 @@ function onConnError(){
 	}
 	document.getElementById("receiveDiv").innerHTML =  "Received: " + bytesToString(data) + "<br/>";
 }
-function actWork(txt){
+function act(txt){
 	var data = stringToBytes('g' + txt);
 	ble.writeWithoutResponse(ConnDeviceId, blue.serviceUUID, blue.txCharacteristic, data, onSend, onError);
 }	
